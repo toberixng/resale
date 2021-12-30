@@ -1,11 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image, SafeAreaView} from "react-native";
 import { Button } from "react-native-web";
+import { useDimensions } from "@react-native-community/hooks";
 
 export default function App() {
-  console.log("App executed");
-  let x;
-  // x.toString();
+  console.log(useDimensions);
+ 
   return (
     <SafeAreaView style={styles.container}>
       <Text>Hello word</Text>
