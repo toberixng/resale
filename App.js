@@ -1,25 +1,8 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Image, SafeAreaView} from "react-native";
-import { Button } from "react-native-web";
-import { useDimensions } from "@react-native-community/hooks";
+import React from "react";
+import { View } from "react-native";
+
+import ViewImageScreen from "./app/screens/ViewImageScreen";
 
 export default function App() {
-  console.log(useDimensions);
- 
-  return (
-    <SafeAreaView style={styles.container}>
-      <Text>Hello word</Text>
-      <StatusBar style="auto" />
-      <Button title="Click me" onPress={() => alert('Button Clicke')}/>
-    </SafeAreaView>
-  );
+  return <ViewImageScreen />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
